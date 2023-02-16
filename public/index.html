@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#171717" />
+    <title>Hey!&lt;!-- --&gt; | Antoni Kępiński</title>
+    <meta property="og:title" content="Hey! | Antoni Kępiński" />
+    <meta name="next-head-count" content="5" />
+    <meta charset="utf8" />
+    <meta
+      name="description"
+      content="Personal website of Antoni Kępiński, full stack developer, open-source enthusiast, and classical music enjoyer, based in Warsaw, Poland."
+    />
+    <meta property="og:title" content="Antoni Kępiński" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.kepinski.ch" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <style>
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+        border: 0 solid #e5e5e5;
+      }
+      :after,
+      :before {
+        --tw-content: "";
+      }
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4;
+        font-family: Whyte, ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+          sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+          Noto Color Emoji;
+        font-feature-settings: normal;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+      }
+      h1 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      small {
+        font-size: 80%;
+      }
+      button {
+        font-family: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        text-transform: none;
+      }
+      button {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+      }
+      h1,
+      p {
+        margin: 0;
+      }
+      button {
+        cursor: pointer;
+      }
+      svg {
+        display: block;
+        vertical-align: middle;
+      }
+      body {
+        font-family: Whyte, ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+          sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+          Noto Color Emoji;
+        font-family: Laica, ui-serif, Georgia, Cambria, Times New Roman, Times,
+          serif;
+        font-family: Favorit Mono, ui-monospace, SFMono-Regular, Menlo, Monaco,
+          Consolas, Liberation Mono, Courier New, monospace;
+      }
+      *,
+      :after,
+      :before {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgba(59, 130, 246, 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+      }
+      .fixed {
+        position: fixed;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .relative {
+        position: relative;
+      }
+      .bottom-2 {
+        bottom: 0.5rem;
+      }
+      .top-0 {
+        top: 0;
+      }
+      .z-10 {
+        z-index: 10;
+      }
+      .mt-2 {
+        margin-top: 0.5rem;
+      }
+      .flex {
+        display: flex;
+      }
+      .grid {
+        display: grid;
+      }
+      .h-fit {
+        height: -moz-fit-content;
+        height: fit-content;
+      }
+      .h-32 {
+        height: 8rem;
+      }
+      .h-full {
+        height: 100%;
+      }
+      .min-h-screen {
+        min-height: 100vh;
+      }
+      .w-fit {
+        width: -moz-fit-content;
+        width: fit-content;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .w-40 {
+        width: 10rem;
+      }
+      .max-w-4xl {
+        max-width: 56rem;
+      }
+      .rotate-180 {
+        --tw-rotate: 180deg;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .cursor-default {
+        cursor: default;
+      }
+      .cursor-pointer {
+        cursor: pointer;
+      }
+      .cursor-vertical-text {
+        cursor: vertical-text;
+      }
+      .select-none {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+      .items-center {
+        align-items: center;
+      }
+      .items-baseline {
+        align-items: baseline;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .justify-evenly {
+        justify-content: space-evenly;
+      }
+      .gap-2 {
+        gap: 0.5rem;
+      }
+      .gap-8 {
+        gap: 2rem;
+      }
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+      .border {
+        border-width: 1px;
+      }
+      .border-gray-600 {
+        --tw-border-opacity: 1;
+        border-color: rgb(82 82 82 / var(--tw-border-opacity));
+      }
+      .bg-gray-200 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+      }
+      .bg-\[\#ffffffaa\] {
+        background-color: #ffffffaa;
+      }
+      .p-2 {
+        padding: 0.5rem;
+      }
+      .px-5 {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+      .pb-8 {
+        padding-bottom: 2rem;
+      }
+      .pt-10 {
+        padding-top: 2.5rem;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .font-serif {
+        font-family: Laica, ui-serif, Georgia, Cambria, Times New Roman, Times,
+          serif;
+      }
+      .font-mono {
+        font-family: Favorit Mono, ui-monospace, SFMono-Regular, Menlo, Monaco,
+          Consolas, Liberation Mono, Courier New, monospace;
+      }
+      .font-sans {
+        font-family: Whyte, ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+          sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+          Noto Color Emoji;
+      }
+      .text-5xl {
+        font-size: 3rem;
+        line-height: 1;
+      }
+      .text-xs {
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+      .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      .font-bold {
+        font-weight: 700;
+      }
+      .font-medium {
+        font-weight: 500;
+      }
+      .uppercase {
+        text-transform: uppercase;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .leading-tight {
+        line-height: 1.25;
+      }
+      .leading-8 {
+        line-height: 2rem;
+      }
+      .tracking-wide {
+        letter-spacing: 0.025em;
+      }
+      .text-gray-600 {
+        --tw-text-opacity: 1;
+        color: rgb(82 82 82 / var(--tw-text-opacity));
+      }
+      .text-gray-700 {
+        --tw-text-opacity: 1;
+        color: rgb(64 64 64 / var(--tw-text-opacity));
+      }
+      .underline {
+        text-decoration-line: underline;
+      }
+      .no-underline {
+        text-decoration-line: none;
+      }
+      .decoration-gray-400 {
+        text-decoration-color: #a3a3a3;
+      }
+      .drop-shadow-lg {
+        filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+          var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+          var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+      }
+      .drop-shadow-lg {
+        --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04))
+          drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
+      }
+      .backdrop-blur-sm {
+        --tw-backdrop-blur: blur(4px);
+      }
+      .backdrop-blur-sm,
+      .backdrop-filter {
+        -webkit-backdrop-filter: var(--tw-backdrop-blur)
+          var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)
+          var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate)
+          var(--tw-backdrop-invert) var(--tw-backdrop-opacity)
+          var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+        backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+          var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+          var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+          var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+          var(--tw-backdrop-sepia);
+      }
+      .transition {
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, -webkit-backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter, -webkit-backdrop-filter;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+      .hover\:border-gray-500:hover {
+        --tw-border-opacity: 1;
+        border-color: rgb(115 115 115 / var(--tw-border-opacity));
+      }
+      .hover\:decoration-gray-500:hover {
+        text-decoration-color: #737373;
+      }
+      @media (prefers-color-scheme: dark) {
+        .dark\:bg-gray-900 {
+          --tw-bg-opacity: 1;
+          background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+        }
+        .dark\:bg-\[\#171717aa\] {
+          background-color: #171717aa;
+        }
+        .dark\:text-gray-400 {
+          --tw-text-opacity: 1;
+          color: rgb(163 163 163 / var(--tw-text-opacity));
+        }
+        .dark\:text-gray-300 {
+          --tw-text-opacity: 1;
+          color: rgb(212 212 212 / var(--tw-text-opacity));
+        }
+        .dark\:decoration-gray-600 {
+          text-decoration-color: #525252;
+        }
+        .dark\:hover\:decoration-gray-500:hover {
+          text-decoration-color: #737373;
+        }
+      }
+      @media (min-width: 1024px) {
+        .lg\:absolute {
+          position: absolute;
+        }
+        .lg\:-left-8 {
+          left: -2rem;
+        }
+        .lg\:px-0 {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .lg\:pb-3 {
+          padding-bottom: 0.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-200 text-gray-700 dark:bg-gray-900 dark:text-gray-300 relative min-h-screen h-full font-sans w-full"
+  >
+    <div id="__next">
+      <div class="w-full flex justify-center relative">
+        <main class="pt-10 max-w-4xl px-5 lg:px-0 grid grid-cols-1 gap-8">
+          <header class="cursor-default">
+            <a href="/"
+              ><abbr class="transition no-underline"
+                ><h1
+                  class="text-5xl font-bold w-fit italic leading-tight font-serif content"
+                >
+                  Humanity Certified
+                </h1></abbr
+              ></a
+            >
+          </header>
+          <div class="flex items-baseline relative gap-2">
+            <span
+              style="writing-mode: vertical-rl"
+              class="h-fit font-mono rotate-180 lg:absolute lg:-left-8 cursor-vertical-text text-gray-600 dark:text-gray-400 uppercase text-xs mt-2 select-none"
+              >INTRO</span
+            >
+            <p class="text-lg leading-8 tracking-wide">
+                <em class="font-serif"
+                >
+                We live in a world where AI is capable of generating text as fluent and natural as humans. 
+                Unfortunately, humans lack the ability to discern the purpose, authenticity, or source of this text - 
+                and the content generated by AI will inevitably become intertwined with the accumulation of human civilization, 
+                blurring the lines between what is real and what is not.
+                </em>
+            </p>
+            <p class="text-lg leading-8 tracking-wide">
+                
+            </p>
+            
+          </div>
+          <div class="flex items-baseline relative gap-2">
+            <p class="text-lg leading-8 tracking-wide">
+                <em class="font-serif"
+                >
+                This AI-generated content will inevitably dilute the very essence of human existence and history.
+                </em>
+            </p>
+          </div>
+          <div class="flex items-baseline relative gap-2">
+            <p class="text-lg leading-8 tracking-wide">
+                <em class="font-serif"
+                >
+                Just as we are unable to distinguish the authenticity of text, 
+                humans will eventually be unable to distinguish the authenticity of history.
+                </em>
+            </p>
+          </div>
+          <div class="flex items-baseline relative gap-2">
+            <p class="text-lg leading-8 tracking-wide">
+                <em class="font-serif"
+                >
+                Some websites may even choose to use these meaningless markers to represent a minuscule fragment of faith in human civilization.
+                </em>
+            </p>
+          </div>
+
+          <div class="flex items-baseline relative gap-2">
+            <span
+              style="writing-mode: vertical-rl"
+              class="h-fit font-mono rotate-180 lg:absolute lg:-left-8 cursor-vertical-text text-gray-600 dark:text-gray-400 uppercase text-xs mt-2 select-none"
+              >LOGOS</span
+            >
+          </div>
+          <div class="flex items-baseline relative gap-2">
+            <img src="assets/humanity-certified-low-resolution-color-logo.png" width="300">
+          </div>
+          <div class="flex items-baseline relative gap-2">
+            <img src="assets/logo-black.png" width="300">
+          </div>
+          <div class="flex items-baseline relative gap-2">
+            <img src="assets/logo-color.png" width="300">
+          </div>
+          <div class="flex items-baseline relative gap-2">
+            <img src="assets/logo-no-background.png" width="300">
+          </div>
+          <div class="flex items-baseline relative gap-2">
+            <img src="assets/logo-white.png" width="300">
+          </div>
+        </main>
+      </div>
+      <div class="h-32"></div>
+      <footer
+        class="text-right text-xs dark:text-gray-400 absolute bottom-2 px-5 lg:px-0 pb-8 lg:pb-3 w-full flex justify-center"
+      >
+        <div class="max-w-4xl flex justify-between w-full">
+          <div class="flex gap-2">
+            
+          </div>
+          <p>
+            ©
+            <!-- -->2022<!-- -->
+            Some Guy
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
